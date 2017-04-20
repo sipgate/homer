@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<document type="captagent_module/xml">
+	<module name="socket_pcap" description="HEP Socket" serial="2014010402">
+		<profile name="socketspcap_isup" description="HEP Socket" enable="true" serial="2014010402">
+			<settings>
+				<param name="dev" value="eth0"/>
+				<param name="promisc" value="false"/>
+				<param name="reasm" value="true"/>
+				<param name="ipv4fragments" value="true"/>
+				<param name="ipv6fragments" value="true"/>
+				<param name="proto-type" value="sip"/>
+				<param name="capture-plan" value="isup_capture_plan.cfg"/>
+				<param name="filter">
+					<value>(sctp)</value>
+				</param>
+			</settings>
+		</profile>
+	</module>
+</document>
+
